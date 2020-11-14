@@ -34,7 +34,21 @@ const questions = [
                 choices: ['MIT', 'APACHE 2.O', 'GPL 3.0', 'BSD 3', 'None' ]
                 
             },
-            
+            {
+                type: 'input',
+                name: 'dependencies',
+                message: 'What command should be installed to run dependencies?'
+            },
+            {
+                type: 'input',
+                name: 'tests',
+                message: 'What command should be run to run tests?'
+            },
+            {
+                type: 'input',
+                name: 'repo',
+                message: 'What does the user need to know about running the repo?'
+            },
             
         ];
         
