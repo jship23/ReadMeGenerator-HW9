@@ -1,16 +1,21 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generate = require('./utils/generateMarkdown');
 
 inquirer
     .prompt([
         
+        
+        
+        // array of questions for user
+        const questions = [
+            {
+                type: 
+
+            },
+            
+        ];
     ])
-
-
-// array of questions for user
-const questions = [
-
-];
 
 // function to write README file
 function writeToFile(fileName, data) {
