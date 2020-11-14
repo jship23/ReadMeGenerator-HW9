@@ -2,23 +2,47 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generate = require('./utils/generateMarkdown');
 
-inquirer
-    .prompt([
-        
-        
-        
-        // array of questions for user
-        const questions = [
-            {
-                type: 
 
+
+
+// array of questions for user
+const questions = [
+    {
+        type: 'input',
+                name: 'github',
+                message: 'What is your github username?'
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'What is your email address?'
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message: 'What is the title of your project?'
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Please write a short description of your project'
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'What kind of license should your project have?',
+                choices: ['MIT', 'APACHE 2.O', 'GPL 3.0', 'BSD 3', 'None' ]
+                
             },
             
+            
         ];
-    ])
-
-// function to write README file
-function writeToFile(fileName, data) {
+        
+        inquirer
+            .prompt(questions)
+        
+        // function to write README file
+        function writeToFile(fileName, data) {
 }
 
 // function to initialize program
