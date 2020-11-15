@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generate = require('./utils/generateMarkdown');
+const generateReadMe = require('./utils/generateMarkdown');
 
 
 
@@ -29,38 +29,43 @@ const questions = [
             },
             {
                 type: 'input',
-                name: 'description',
+                name: 'license',
                 message: 'What kind of license should your project have?',
                 choices: ['MIT', 'APACHE 2.O', 'GPL 3.0', 'BSD 3', 'None' ]
                 
             },
             {
                 type: 'input',
-                name: 'dependencies',
+                name: 'install',
                 message: 'What command should be installed to run dependencies?'
             },
             {
                 type: 'input',
-                name: 'tests',
+                name: 'test',
                 message: 'What command should be run to run tests?'
             },
             {
                 type: 'input',
-                name: 'repo',
-                message: 'What does the user need to know about running the repo?'
+                name: 'usage',
+                message: 'What does the user need to know about using the repo?'
+            },
+            {
+                type: 'input',
+                name: 'contribution',
+                message: 'What does the user need to know about contributing to the repo?'
             },
             
         ];
-        
-        inquirer
-            .prompt(questions)
-        
-        // function to write README file
-        function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
+        
+        
+        // function to initialize program
+        function init() {
+            inquirer
+                .prompt(questions)
+                .then((answers) => fs.writeFile('README.md', generateReadMe(answers)))
+                .then(() => console.log('Successfully wrote to README.md'))
+                .catch((err) => console.error(err));
 
 }
 
