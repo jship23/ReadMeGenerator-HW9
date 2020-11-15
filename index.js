@@ -56,18 +56,25 @@ const questions = [
             },
             
         ];
-
         
         
         // function to initialize program
         function init() {
-            inquirer
-                .prompt(questions)
-                .then((answers) => fs.writeFile('README.md', generateReadMe(answers)))
-                .then(() => console.log('Successfully wrote to README.md'))
-                .catch((err) => console.error(err));
+          inquirer
+            .prompt(questions)
+            .then((response) => {
+              console.log(response);
 
-}
+              fs.writeFile("SAMPLE.md", generateReadMe(response), function (
+                err
+              ) {
+                if (err) {
+                  throw err;
+                }
+              });
+            })
+            .catch((err) => console.log(err));
+        }
 
 // function call to initialize program
 init();

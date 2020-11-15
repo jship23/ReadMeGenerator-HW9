@@ -1,6 +1,6 @@
-# j
+# ReadMe Generator
   ## Description
-  j
+  The generator allows a user to create a readme.md file
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,17 +10,17 @@
   ## Installation
   To install necessary dependencies, run the following command:
   ```
-  j
+  npm i
   ```
   ## Usage
-  j 
+  no additional info 
   ## Contributing
-  j
+  no contributions necessary at this time
   ## Tests
   To run tests, run the following command:
   ```
-  j
+  npm test
   ```
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at j. You can find more of my work at [j](https://github.com/j/).
+  If you have any questions about the repo, open an issue or contact me directly at jordan.j.shipley@gmail.com. You can find more of my work at [jship23](https://github.com/jship23/).
   
