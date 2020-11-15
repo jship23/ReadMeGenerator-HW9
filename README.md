@@ -1,26 +1,29 @@
-# j
+# ReadMe Generator
   ## Description
-  j
+  The generator allows a user to create a readme.md file
+  ## Walk Through Video
+
+
+
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   ## Installation
   To install necessary dependencies, run the following command:
   ```
-  j
+  npm install and then node index.js
   ```
   ## Usage
-  j 
-  ## Contributing
-  j
+  1. Run node index.js 
+  2. Answer the question prompts
+  3. The readme file will be generated.
+  
   ## Tests
   To run tests, run the following command:
   ```
-  j
+  npm test
   ```
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at j. You can find more of my work at [j](https://github.com/j/).
-  
+  If you have any questions about the repo, open an issue or contact me directly at jordan.j.shipley@gmail.com. You can find more of my work at [jship23](https://github.com/jship23/).
