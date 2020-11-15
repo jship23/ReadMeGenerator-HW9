@@ -1,6 +1,6 @@
-# ReadMe Generator
+# README Generator
   ## Description
-  The generator allows a user to create a readme.md file
+  A user can answer prompts to create a README.md file
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -13,9 +13,9 @@
   npm i
   ```
   ## Usage
-  no additional info 
+  step 1 run npm i, step 2 run node index.js 
   ## Contributing
-  no contributions necessary at this time
+  no contributions necessary
   ## Tests
   To run tests, run the following command:
   ```
